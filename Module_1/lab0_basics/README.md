@@ -1,4 +1,4 @@
-<h1> The completed evidence table with three distinct public IPv4 addresses:</h1>
+# The completed evidence table with three distinct public IPv4 addresses:
 
 | Deployment | Public IPv4 address | Connection method | Screenshot | Instance terminated? |
 |-----------|---------------------|-------------------|-----------|----------------------|
@@ -6,7 +6,7 @@
 | 2 | 3.143.110.232 | SSH | deployment-2.png | Yes |
 | 3 | 3.132.212.97 | SSH | deployment-3.png | Yes |
 
-<h1>Deployment description:</h1> (launch, SSH connection, and dashboard) 
+# Deployment description: (launch, SSH connection, and dashboard) 
 
 ## Deployment #1 :
 ![Deployment 1](screenshots/deployment-1.png)
@@ -17,42 +17,56 @@
 ## Deployment #3 :
 ![Deployment 3](screenshots/deployment-3.png)
 
-<h2>Instance Data Refleciton Deployment #1:</h2>
+## Instance Data Refleciton Deployment #1:
 
-<h3>Host Name:</h3> ip-172-31-28-74.us-east-2b.compute.internal
+### Host Name:
+ip-172-31-28-74.us-east-2b.compute.internal
 
-<h3>Instance type:</h3> T3. Micro 
 Reflection:
-the Virtual Machine size
+identifies the machine on the network
+helps system know which instance you are working on
 
-<h3>Availability Zone:</h3> us-east-2b
-Reflection: 
-The Virtual Machine (ec2) is physically hosted inside this region
+### Instance type:
+T3. Micro
 
-<h3>CPU:</h3> 0% busy (approx.) | 2 vCPU(s)
-Reflection: ip-172-31-28-74.us-east-2b.compute.internal
-The server is idle
-Not under heavy load
-
-<h3>Memory:</h3>  180Mi used / 913Mi total
 Reflection:
-Roughly 20% of Mebibytes used
-Plenty of memory available
+The Virtual Machine size is small and suitable for light workloads.
 
-<h3>Disk:</h3> 1.7G used / 8.0G total (21% full)
+### Availability Zone:
+us-east-2b
+
 Reflection:
-Only 21% Gigabytes occupied
-About 6.3 GB free
-Good on threshold
+The Virtual Machine (EC2) is physically hosted in this region.
 
-<h3>Uptime:</h3> up 9 minutes
+### CPU:
+0% busy (approx.) | 2 vCPU(s)
+
 Reflection:
-Instance running for a short time
+The server is idle and not under heavy load.
 
-<h1>The one thing that became easier after repeating the process:</h1>
+### Memory:
+180Mi used / 913Mi total
+
+Reflection:
+Roughly 20% of memory is in use, and there is plenty of memory available.
+
+### Disk:
+1.7G used / 8.0G total (21% full)
+
+Reflection:
+Only 21% of the disk is occupied, with about 6.3 GB free. This is within a healthy range.
+
+### Uptime:
+Up 9 minutes
+
+Reflection:
+The instance has been running for a short time, which is expected after launch and initial setup.
+
+# The one thing that became easier after repeating the process:
 Creating instances became more fluid after creating 3 and working through some kinks.
 
-<h1>Errors encountered and resolution:</h1>
+# Errors encountered and resolution:
+
 #1 Upon accessing my ec2 instance I used the command line # ssh -i ec2-user@"my_public_IPv4" and was rejected from connecting to my AWS EC2 instance. I then investigated and confirmed my instance Passkey was required. I implemented the key in to the command line # ssh -i "Passkey" ec2-user@"my_public_IPv4". After submission I then was prompted whether I wanted to proceed. Once I acknowledged "yes" I then obtained authorization to connect to the ec2 server.  
 
 #2 After obtaining authorization to access the Sear Foundation output did not display. I realized that I did not apply the Raw Code from the repository when creating the ec2 instance. I terminated the ec2 and started over. After I acquired the ec2 Raw code from the reposity and applied it to my new ec2 instance I access i was able to access the EC2 via SSH and was prompted with the SEIR dashboard.
@@ -60,10 +74,10 @@ Creating instances became more fluid after creating 3 and working through some k
 #3 In addition I terminated my old security and created a fresh one. My inbound rules were set "SSH" and " "HTTP" and instead of using IP4V as the source I selected "My IP" to not open the "SSH" and "HTTP" ports to the entire internet.
 
 
-<h1>Practice instances clean up:</h1>
+# Practice instances clean up:
 Instances Terminated
 
-<h1>Assignment Completion Checklist</h1>
+# Assignment Completion Checklist:
 
 - [x] I connected to AWS EC2 using SSH.
 - [x] I observed the SEIR dashboard raw code.
