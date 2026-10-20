@@ -9,13 +9,13 @@
 <h1>Deployment description:</h1> (launch, SSH connection, and dashboard) 
 
 ## Deployment #1 :
-![Deployment 1](./screenshots/deployment-1)
+![Deployment 1](screenshots/deployment-1)
 
 ## Deployment #2 :
-![Deployment 2](./screenshots/deployment-2)
+![Deployment 2](screenshots/deployment-2)
 
 ## Deployment #3 :
-![Deployment 3](./screenshots/deployment-3)
+![Deployment 3](screenshots/deployment-3)
 
 <h1>Instance Data Refleciton Deployment #1:</h1>
 
