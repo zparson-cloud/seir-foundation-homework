@@ -1,10 +1,10 @@
-The completed evidence table with three distinct public IPv4 addresses:
+<h1>The completed evidence table with three distinct public IPv4 addresses:</h1>
 Deployment	Public IPv4 address	Connection method	Screenshot	        Instance terminated?
 1	        18.118.216.93	         SSH	        deployment-1.png	Yes
 2	        3.143.110.232	         SSH	        deployment-2.png	Yes
 3	        3.132.212.97	         SSH	        deployment-3.png	Yes
 
-Deployment description: (launch, SSH connection, and dashboard) 
+<h1>Deployment description:</h1> (launch, SSH connection, and dashboard) 
 
 
 Deployment #1 :
@@ -13,41 +13,37 @@ Deployment #2 :
 
 Deployment #3 :
 
-Instance Data Refleciton:
+<h1>Instance Data Refleciton:</h1>
 
-Instance type / Availability Zone: T3. Micro
+Instance type / Availability Zone: T3. Micro / us-east-2b
+Reflection:
 
 CPU: 0% busy (approx.) | 2 vCPU(s)
 Reflection:
-
 The server is idle
 Not under heavy load
 
 Memory:  180Mi used / 913Mi total
-
 Reflection:
 Roughly 20% used
 Plenty of memory available
 
 Disk: 1.7G used / 8.0G total (21% full)
-
 Reflection:
-
 Only 21% full
 About 6.3 GB free
 Nothing alarming
 
 Uptime: up 9 minutes
-
 Reflection:
 Instance running for a short time
 
-The one thing that became easier after repeating the process:
+<h1>The one thing that became easier after repeating the process:</h>
 
 Creating instances began more natural after creating 3 and working through some kinks
 
 
-Errors encountered and resolution:
+<h>Errors encountered and resolution:</h>
 
 1. Upon accessing my ec2 instance I used the command line # ssh -i ec2-user@"my_public_IPv4" and was rejected from connecting to my AWS EC2 instance. I then investigated and confirmed my Instance Passkey was required and implemented the key in to the command line # ssh -i "Passkey" ec2-user@"my_public_IPv4". After submission I then was prompted whether I wanted to proceed. Once I acknowledged "yes" I then obtained authorization to connect to the ec2 server.  
 
@@ -56,6 +52,6 @@ Errors encountered and resolution:
 3. In addition I terminated my old security and created a fresh one. My inbound rules were set for "SSH" and " "HTTP" and instead of using IP4V as the source I selected "My IP" to not open the "SSH" and "HTTP" to the entire internet.
 
 
-Practice instances cleaned up:
+<h>Practice instances clean up:</h1>
 
 Instances Terminated
