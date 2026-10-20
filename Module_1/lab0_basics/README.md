@@ -9,15 +9,15 @@
 <h1>Deployment description:</h1> (launch, SSH connection, and dashboard) 
 
 ## Deployment #1 :
-![Deployment 1](screenshots/deployment-1)
+![Deployment 1](screenshots/deployment-1.png)
 
 ## Deployment #2 :
-![Deployment 2](screenshots/deployment-2)
+![Deployment 2](screenshots/deployment-2.png)
 
 ## Deployment #3 :
-![Deployment 3](screenshots/deployment-3)
+![Deployment 3](screenshots/deployment-3.png)
 
-<h1>Instance Data Refleciton Deployment #1:</h1>
+<h2>Instance Data Refleciton Deployment #1:</h2>
 
 <h3>Host Name:</h3> ip-172-31-28-74.us-east-2b.compute.internal
 
@@ -50,20 +50,17 @@ Reflection:
 Instance running for a short time
 
 <h1>The one thing that became easier after repeating the process:</h1>
-
-Creating instances began more natural after creating 3 and working through some kinks
+Creating instances became more fluid after creating 3 and working through some kinks.
 
 <h1>Errors encountered and resolution:</h1>
+#1 Upon accessing my ec2 instance I used the command line # ssh -i ec2-user@"my_public_IPv4" and was rejected from connecting to my AWS EC2 instance. I then investigated and confirmed my instance Passkey was required. I implemented the key in to the command line # ssh -i "Passkey" ec2-user@"my_public_IPv4". After submission I then was prompted whether I wanted to proceed. Once I acknowledged "yes" I then obtained authorization to connect to the ec2 server.  
 
-#1 Upon accessing my ec2 instance I used the command line # ssh -i ec2-user@"my_public_IPv4" and was rejected from connecting to my AWS EC2 instance. I then investigated and confirmed my Instance Passkey was required and implemented the key in to the command line # ssh -i "Passkey" ec2-user@"my_public_IPv4". After submission I then was prompted whether I wanted to proceed. Once I acknowledged "yes" I then obtained authorization to connect to the ec2 server.  
+#2 After obtaining authorization to access the Sear Foundation output did not display. I realized that I did not apply the Raw Code from the repository when creating the ec2 instance. I terminated the ec2 and started over. After I acquired the ec2 Raw code from the reposity and applied it to my new ec2 instance I access i was able to access the EC2 via SSH and was prompted with the SEIR dashboard.
 
-#2 After obtaining authorization to access Sear Foundation output did not display. I realized that I did not appliy the Raw Code from the repository when creating my ec2 instance. I terminated the ec2 and started fresh. Acquired the ec2 Raw code from the reposity and applied it to my new ec2 instance.
-
-#3 In addition I terminated my old security and created a fresh one. My inbound rules were set for "SSH" and " "HTTP" and instead of using IP4V as the source I selected "My IP" to not open the "SSH" and "HTTP" to the entire internet.
+#3 In addition I terminated my old security and created a fresh one. My inbound rules were set "SSH" and " "HTTP" and instead of using IP4V as the source I selected "My IP" to not open the "SSH" and "HTTP" ports to the entire internet.
 
 
 <h1>Practice instances clean up:</h1>
-
 Instances Terminated
 
 <h1>Assignment Completion Checklist</h1>
