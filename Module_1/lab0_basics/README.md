@@ -28,58 +28,44 @@
 
 ## Instance Data Reflection Deployment #1:
 
-### Host Name:
-ip-172-31-28-74.us-east-2b.compute.internal
-
+### Host Name: ip-172-31-28-74.us-east-2b.compute.internal
 Reflection:
 
-identifies the machine on the network
+identifies the machine on the network and
 helps system know which instance you are working on
 
-### Instance type:
-T3. Micro
-
+### Instance type: T3. Micro
 Reflection:
 
 The Virtual Machine size is small and suitable for light workloads.
 
-### Availability Zone:
-us-east-2b
-
+### Availability Zone: us-east-2b
 Reflection:
 
 The Virtual Machine (EC2) is physically hosted in this region.
 
-### CPU:
-0% busy (approx.) | 2 vCPU(s)
-
+### CPU: 0% busy (approx.) | 2 vCPU(s)
 Reflection:
 
 The server is idle and not under heavy load.
 
-### Memory:
-180Mi used / 913Mi total
-
+### Memory: 180Mi used / 913Mi total
 Reflection:
 
 Roughly 20% of memory is in use, and there is plenty of memory available.
 
-### Disk: 
-1.7G used / 8.0G total (21% full)
-
+### Disk: 1.7G used / 8.0G total (21% full)
 Reflection:
 
-Only 21% of the disk is occupied, with about 6.3 GB free. This is within a healthy range.
+Only 21% of the disk is occupied, with about 6.3 GB free.
 
-### Uptime:
-Up 9 minutes
-
+### Uptime: Up 9 minutes
 Reflection:
 
-The instance has been running for a short time, which is expected after launch and initial setup.
+The instance running time, initial setup.
 
 # One thing that became easier after repeating the process:
-Creating instances became more fluid after creating 3 and working through some kinks.
+Creating an instance became more fluid after creating 3 and working through some kinks.
 
 # Errors encountered and resolution:
 
