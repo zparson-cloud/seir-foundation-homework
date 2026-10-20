@@ -8,14 +8,14 @@
 
 # Deployment description: (launch, SSH connection, and dashboard) 
 
-### Log into AWS console and searched for ec2 service. Once located, launch a new instance and establish the ec2 with the following criteria: Create Name, Select relevant AMI, Create Pass key (Saved in practicle location), Select Security Group ( Open New Tab and create security group: SSH and HTTP Soure: My IP and launch ). Instance should be pre-set with free tier settings. 
+### Log into AWS console through GUI and search for ec2 service. Once located, launch a new instance and establish the ec2 with the following criteria: Create Name, Select relevant AMI, Create Pass key (Saved in practical location), Select Security Group ( Open New Tab and create security group: Inbound Rules: SSH and HTTP | Soure: My IP and launch ). Instance should be pre-set with free tier settings. 
 
-### Retrieve seir ec2 Raw Code from your repository (access previously acquired) SEIR FOUNDATION. Access advance settings on AWS Console and Paste Raw code into User Data field. Click Launch instance. Allow Instance to complete processing.
+### Retrieve seir ec2 Raw Code from repository (access previously acquired) SEIR FOUNDATION. Access advance settings on AWS Console and Paste Raw code into User Data field. Click Launch instance. Allow Instance to complete processing.
 
-## #Windows
-### Open directory containing ec2 passkey via the IDE. Access the Terminal and type," ssh -i *passkey(Space) "ec2-user@" (NoSpace) *InstancePublicIP4v and press enter.
+### #Windows
+### Open directory containing ec2 passkey via the IDE Open Folder. Access the Terminal and type," ssh -i *passkey(Space) "ec2-user@" (NoSpace) *InstancePublicIP4v and press enter.
 
-### Terminal will populate prompt regarding interest in proceeding. Type yes and the SEIR Dash board will populate.
+### Terminal will populate prompt regarding interest in proceeding. Type yes and the SEIR Dashboard will populate.
 
 ## Deployment #1 :
 ![Deployment 1](screenshots/deployment-1.png)
@@ -29,40 +29,26 @@
 ## Instance Data Reflection Deployment #1:
 
 ### Host Name: ip-172-31-28-74.us-east-2b.compute.internal
-Reflection:
-
-identifies the machine on the network and
-helps system know which instance you are working on
+Reflection: Identifies the machine on the network and
+helps system know which instance the user is working on
 
 ### Instance type: T3. Micro
-Reflection:
-
-The Virtual Machine size is small and suitable for light workloads.
+Reflection: The Virtual Machine size is small and suitable for light workloads.
 
 ### Availability Zone: us-east-2b
-Reflection:
-
-The Virtual Machine (EC2) is physically hosted in this region.
+Reflection: The Virtual Machine (EC2) is physically hosted in this region.
 
 ### CPU: 0% busy (approx.) | 2 vCPU(s)
-Reflection:
-
-The server is idle and not under heavy load.
+Reflection: The server is idle and not under heavy load.
 
 ### Memory: 180Mi used / 913Mi total
-Reflection:
-
-Roughly 20% of memory is in use, and there is plenty of memory available.
+Reflection: Roughly 20% of memory is in use, and there is plenty of memory available.
 
 ### Disk: 1.7G used / 8.0G total (21% full)
-Reflection:
-
-Only 21% of the disk is occupied, with about 6.3 GB free.
+Reflection: Only 21% of the disk is occupied, with about 6.3 GB free.
 
 ### Uptime: Up 9 minutes
-Reflection:
-
-The instance running time, initial setup.
+Reflection: The instance running time, initial setup.
 
 # One thing that became easier after repeating the process:
 Creating an instance became more fluid after creating 3 and working through some kinks.
