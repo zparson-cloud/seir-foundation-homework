@@ -8,14 +8,14 @@
 
 <h1>Deployment description:</h1> (launch, SSH connection, and dashboard) 
 
-<h2>Deployment #1 :</h2>
-![Deployment 1](./screenshots/deployment-1.png)
+## Deployment #1 :
+![Deployment 1](./screenshots/deployment-1)
 
-<h2>Deployment #2 :</h2>
-![Deployment 2](./screenshots/deployment-2.png)
+## Deployment #2 :
+![Deployment 2](./screenshots/deployment-2)
 
-<h2>Deployment #3 :</h2>
-![Deployment 3](./screenshots/deployment-3.png)
+## Deployment #3 :
+![Deployment 3](./screenshots/deployment-3)
 
 <h1>Instance Data Refleciton Deployment #1:</h1>
 
