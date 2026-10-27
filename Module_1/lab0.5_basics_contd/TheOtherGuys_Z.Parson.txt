@@ -1,0 +1,3 @@
+Spotter = Zackary Parson
+Teammates = Zackary Parson, James Fakunle
+Days + Times when your team meets = Mon | Wed | Fri, 7:00 AM : 9:30 AM ET   Thurs, 1130 PM - 1230 AM
